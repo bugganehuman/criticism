@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv(dotenv_path=".//secret.env")
 
-SECRET_KEY = 'key'
+SECRET_KEY = 'q'
 
 
 DEBUG = True

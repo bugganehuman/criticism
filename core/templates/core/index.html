@@ -1,5 +1,16 @@
 {% extends "base.html" %}
+{% load cloudinary %}
+
 
 {% block content %}
-<h1>Q</h1>
+    {% for element in elements %}
+        <div id = "created_at">{{element.created_at}}</div>
+        {% cloudinary element.cover.name width=350 height=350 crop="fit" %}
+        <div id = "created_name">{{element.content_name}}</div>
+        <div id = "rating" >{{element.rating}}</div>
+        <div id = "review">{{element.review|linebreaks}}</div>
+        <div id = "space"></div>
+
+    {% endfor %}
 {% endblock %}
+
