@@ -1,5 +1,5 @@
 # Criticism
-## my riviews to movie
+## my reviews of films and TV series
 
 ## stack
 - Django 6.0
