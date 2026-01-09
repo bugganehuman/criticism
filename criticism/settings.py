@@ -1,7 +1,5 @@
 from pathlib import Path
 import os
-
-import dotenv
 from dotenv import load_dotenv
 
 
@@ -11,6 +9,7 @@ load_dotenv(dotenv_path=".//secret.env")
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
+STATIC_ROOT = BASE_DIR/"staticfiles"
 
 DEBUG = False
 
