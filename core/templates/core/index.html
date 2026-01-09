@@ -1,11 +1,10 @@
 {% extends "base.html" %}
-{% load cloudinary %}
 
 
 {% block content %}
     {% for element in elements %}
         <div id = "created_at">{{element.created_at}}</div>
-        {% cloudinary element.cover.name width=350 height=350 crop="fit" %}
+        <img src="{{element.cover.url }}" style="max-width: 350px; max-height: 350px; width: auto; height: auto;">
         <div id = "created_name">{{element.content_name}}</div>
         <div id = "rating" >{{element.rating}}</div>
         <div id = "review">{{element.review|linebreaks}}</div>
