@@ -9,4 +9,4 @@
 - pythonanywhere
 
 ## link to site
-https://buggane.pythonanywhere.com/sorted_up/?
+https://buggane.pythonanywhere.com
