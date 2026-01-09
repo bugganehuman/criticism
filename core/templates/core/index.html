@@ -4,7 +4,9 @@
 {% block content %}
     {% for element in elements %}
         <div id = "created_at">{{element.created_at}}</div>
-        <img src="{{element.cover.url }}" style="max-width: 350px; max-height: 350px; width: auto; height: auto;">
+        <img src="{{element.cover.url }}" style="max-width: 350px;
+            max-height: 350px; width: auto; height: auto;
+                object-fit: contain">
         <div id = "created_name">{{element.content_name}}</div>
         <div id = "rating" >{{element.rating}}</div>
         <div id = "review">{{element.review|linebreaks}}</div>
