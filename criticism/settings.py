@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 STATIC_ROOT = BASE_DIR/"staticfiles"
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['buggane.pythonanywhere.com']
 
