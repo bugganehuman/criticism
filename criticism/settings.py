@@ -92,6 +92,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+MEDIA_URL = "media/"
+
+MEDIA_ROOT = BASE_DIR/"media"
+
+"""
 
 CLOUDINARY_STORAGE = {
     "CLOUD_NAME" : os.getenv("CLOUDINARY_CLOUD_NAME"),
@@ -112,3 +117,6 @@ STORAGES = {
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticCloudinaryStorage'
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+"""
+
